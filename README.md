@@ -22,3 +22,8 @@ Getting Started:
 Feel free to explore and modify the code to enhance the functionality or customize the user interface according to your preferences.
 
 Contributions and feedback are welcome!
+
+
+![WeatherApp_LandingPage](https://github.com/AmitBoricha/WeatherApp---Python-Flask/assets/79803194/ea6fff8f-58a3-4eec-a750-d041b786ae81)
+![WeatherApp_test2](https://github.com/AmitBoricha/WeatherApp---Python-Flask/assets/79803194/59f7f96f-b5c3-4ef8-b5e4-21192c2daa14)
+![WeatherApp_errorHandling](https://github.com/AmitBoricha/WeatherApp---Python-Flask/assets/79803194/942b753f-2201-4a64-aa51-a81ee58f1870)
