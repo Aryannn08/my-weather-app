@@ -13,7 +13,7 @@ Tech Stack:
 - Requests: A Python library for making HTTP requests to the OpenWeatherMap API.
 
 Getting Started:
-1. Clone the repository: git clone https://github.com/your-username/weather-app.git
+1. Clone the repository: git clone https://github.com/AmitBoricha/weather-app.git
 2. Install the required dependencies: pip install -r requirements.txt
 3. Set up your OpenWeatherMap API key in the .env file.
 4. Run the Flask application: python app.py
