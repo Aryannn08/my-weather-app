@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/styles.css" />
+    <title>Weather App</title>
+</head>
+<body>
+
+    
+    <div class="card">
+
+        {% if show_heading %}
+        <div class="header">
+            <h1>WEATHER APP</h1>
+        </div>
+        {% endif %}
+
+        <form method="POST" action="/">  
+            <div class="search">
+                <input type="text" name ="city" placeholder="Enter city name" spellcheck="false">
+                <button type="submit"><img src="/static/search.png" ></button>
+            </div>
+        </form>
+
+        {% if error %}
+        <p class="error-message">{{ error }}</p>
+        {% else %}
+
+        {% if weather %}
+        <div class="weather">
+            <img src= "static/icons/{{ weather.iconid }}.png" class="weather-icon" >
+            <h1 class="temp">{{ weather.temperature }}°C</h1>
+            <h2 class="city">{{ city }}</h2>
+            <h3 class="description">{{ weather.description }}</h3>
+            <div class="details">
+                <div class="col">
+                    <img src="/static/humidity.png" >
+                    <p class="humidity">{{ weather.humidity }}%</p>
+                    <p>Humidity</p>
+                </div>
+                <div class="col">
+                    <img src="/static/wind.png" >
+                    <p class="wind">{{ weather.windSpeed }} Km/h</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        {% endif %}
+    </div>
+    
+</body>
+</html>
