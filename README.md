@@ -1,4 +1,4 @@
-Weather App using Flask and OpenWeatherMap API
+Weather App using Python and OpenWeatherMap API
 
 This is a simple web application built with HTML,CSS,Python that allows users to check the current weather conditions of any city. It utilizes the OpenWeatherMap API to retrieve real-time weather data.
 
